@@ -1,0 +1,10 @@
+﻿@model IndexViewModel
+
+@if (Model.CurrentCatalog != null){
+    <h4>"Folder" - @Model.CurrentCatalog.Name</h4>
+}
+
+@foreach(var item in Model.Catalogs){
+    <a asp-controller="Home" asp-action="Index" method="post" asp-route-id="@item.id">@item.Name</a>
+    <br />
+}

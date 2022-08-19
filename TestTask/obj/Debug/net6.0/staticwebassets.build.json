@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "mZrmGG3FhSE73hD+Ldvm2ftjML+4YD190r0+r/YAsYQ=",
+  "Source": "TestTask",
+  "BasePath": "_content/TestTask",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TestTask\\wwwroot",
+      "Source": "TestTask",
+      "ContentRoot": "D:\\C#\\TestTask\\wwwroot\\",
+      "BasePath": "_content/TestTask",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\C#\\TestTask\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TestTask.styles.css",
+      "SourceId": "TestTask",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\C#\\TestTask\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/TestTask",
+      "RelativePath": "TestTask.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\C#\\TestTask\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TestTask.styles.css"
+    },
+    {
+      "Identity": "D:\\C#\\TestTask\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TestTask.bundle.scp.css",
+      "SourceId": "TestTask",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\C#\\TestTask\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/TestTask",
+      "RelativePath": "TestTask.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\C#\\TestTask\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TestTask.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\C#\\TestTask\\wwwroot\\favicon.ico",
+      "SourceId": "TestTask",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\TestTask\\wwwroot\\",
+      "BasePath": "_content/TestTask",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}
