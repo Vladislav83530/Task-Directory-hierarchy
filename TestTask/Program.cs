@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TestTask.Data;
 using TestTask.Models;
+using TestTask.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,8 @@ builder.Services.AddIdentity<User, IdentityRole>(opts => {
     opts.Password.RequireUppercase = false;
     opts.Password.RequireDigit = true;
 }).AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddScoped<IUploadService, UploadService>();
 
 var app = builder.Build();
 
@@ -39,6 +42,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=WelcomePage}/{id?}");
 
 app.Run();

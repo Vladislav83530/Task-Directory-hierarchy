@@ -1,0 +1,16 @@
+﻿<div class="container">
+    <h1>Welcome To Directory Browser</h1>
+    <h4>Choose the option:</h4>
+    
+    <a class="btn btn-md btn-primary" asp-controller="Home" asp-action="TestData">Test Data</a>
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <a class="btn btn-md btn-primary" asp-controller="Account" asp-action="Login">Import From OS</a>       
+    } else
+    {
+        <a class="btn btn-md btn-primary" asp-controller="Home" asp-action="Importer">Import From OS</a>
+        <a class="btn btn-md btn-primary" asp-controller="Home" asp-action="GetUsersCatalogs">My Folders</a>
+        <a asp-controller="Import_Export" asp-action="ExportYourFolders" class="btn btn-md btn-primary">Export My Folders</a>
+        <a asp-controller="Import_Export" asp-action="ImportFile" class="btn btn-md btn-primary">Import Folders From Json</a>
+    }
+</div>

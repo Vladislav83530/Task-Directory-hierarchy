@@ -125,3 +125,6 @@ D:\C#\TestTask\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.
 D:\C#\TestTask\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\C#\TestTask\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 D:\C#\TestTask\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\C#\TestTask\bin\Debug\net6.0\ImportFiles\92993320-7f34-4098-a2cd-5889ed39ef29.json
+D:\C#\TestTask\bin\Debug\net6.0\ImportFiles\847bac01-e661-41da-bc76-bfcf15b3a826.json
+D:\C#\TestTask\bin\Debug\net6.0\ImportFiles\07e41952-89af-47b0-bb30-7af455063799.json

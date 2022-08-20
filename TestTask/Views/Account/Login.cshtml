@@ -1,17 +1,17 @@
 ﻿@model TestTask.Models.LoginViewModel
- 
+ <div class="col-4">
 <h2>Log in</h2>
 <form method="post" asp-controller="Account" asp-action="Login"
       asp-route-returnUrl="@Model.ReturnUrl">
     <div asp-validation-summary="ModelOnly"></div>
     <div>
         <label asp-for="Email"></label><br />
-        <input asp-for="Email" />
+        <input  class="form-control" asp-for="Email" />
         <span asp-validation-for="Email"></span>
     </div>
     <div>
         <label asp-for="Password"></label><br />
-        <input asp-for="Password" />
+        <input  class="form-control" asp-for="Password" />
         <span asp-validation-for="Password"></span>
     </div>
     <div>
@@ -19,6 +19,7 @@
         <input asp-for="RememberMe" />
     </div>
     <div>
-        <input type="submit" value="Log in" />
+        <input class="btn-primary btn mt-2" type="submit" value="Log in" />
     </div>
 </form>
+</div>

@@ -32,7 +32,7 @@ namespace TestTask.Controllers
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, false);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("WelcomePage", "Home");
                 }
                 else
                 {
@@ -63,7 +63,7 @@ namespace TestTask.Controllers
                     if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
                         return Redirect(model.ReturnUrl);
                     else
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("WelcomePage", "Home");
                 }
                 else
                     ModelState.AddModelError("", "Wrong username and/or password");
@@ -76,7 +76,7 @@ namespace TestTask.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("WelcomePage", "Home");
         }
     }
 }

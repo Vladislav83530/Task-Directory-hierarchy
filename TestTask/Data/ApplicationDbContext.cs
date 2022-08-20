@@ -10,6 +10,11 @@ namespace TestTask.Data
         {
             Database.EnsureCreated();
         }
+
+        public ApplicationDbContext()
+        {
+
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -29,6 +34,19 @@ namespace TestTask.Data
                 new { id = new Guid("26e48c4c-7bff-4a26-a139-291a89a8648d"), ParentID = new Guid("c13b1f42-266a-49ca-932b-62c70da55590"), Name = "Process" },
                 new { id = new Guid("6e70a745-12c8-493c-ace5-0001c168b47c"), ParentID = new Guid("c13b1f42-266a-49ca-932b-62c70da55590"), Name = "Final Product" }
                 );
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                IConfigurationRoot configuration = new ConfigurationBuilder()
+                   .SetBasePath(Directory.GetCurrentDirectory())
+                   .AddJsonFile("appsettings.json")
+                   .Build();
+                var connectionString = configuration.GetConnectionString("DefaultConnection");
+                optionsBuilder.UseSqlServer(connectionString);
+            }
         }
 
         public DbSet<Catalog> Catalogs {get; set;}
